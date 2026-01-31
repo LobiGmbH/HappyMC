@@ -3,7 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <title>HappyMC Realm</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #6b5b95, #feb236);
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        header {
+            background: rgba(0,0,0,0.6);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 2em;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background: rgba(0,0,0,0.4);
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+        }
+
+        .container p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
+
+        .container strong {
+            color: #ffeb3b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.6);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,18 +98,21 @@
 </header>
 
 <div class="container">
-    <h2>Willkommen!</h2>
+    <h2>Willkommen auf HappyMC!</h2>
     <p>
-        Unser Minecraft Server bietet ein einzigartiges Spielerlebnis mit
-        besonderen Rängen, Events und einer aktiven Community.
-        Der Server unterstützt RPG,PVP,CITYBUILD,EVENT
+        Tauche ein in ein einzigartiges Minecraft-Erlebnis mit besonderen Rängen, spannenden Events und einer aktiven Community. 
+        Unser Server unterstützt <strong>RPG, PVP, Citybuild</strong> und regelmäßige <strong>Events</strong>.
     </p>
 
     <p>
-        IP: <strong>Realm.happyminecraft.org</strong><br>
+        Server-IP: <strong>Realm.happyminecraft.org</strong><br>
         Version: <strong>1.21+</strong>
     </p>
 </div>
+
+<footer>
+    &copy; 2026 HappyMC Realm – Alle Rechte vorbehalten
+</footer>
 
 </body>
 </html>
